@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact us: Gelos Training Institute</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+        <div class="header">
+            <img src="images/reverse-logo-on-dark.jpg" alt="gelos logo">
+            <h1>Gelos Training Institute</h1>
+            <h2>Industry-Leading Training for a Brighter Future</h2>
+        </div>
+
+        <div class="navbar">
+            <a href="contact.html" class="active right">Contact</a>
+            <a href="course.html" class="right">Course</a>
+            <a href="index.html#about-us" class="right">About</a>
+            <a href="index.html" class="right">Home</a>
+        </div>
+
+        <div class="row">
+            <div class="side">
+                <div class="sidebar">
+                </div>
+            </div>
+            <div class="main">
+                <div class="contact-container">
+                    <div id="contact-title">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <div class="contact-row">
+                        <div class="contact-column">
+                            <h4>Enquire online</h4>
+                            <form action="mailto:magicalginger@gmail.com" onsubmit="return validateForm()">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                <span id="fname-error"></span>
+                                <br><br>
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                <span id="lname-error"></span>
+                                <br><br>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Your email..">
+                                <span id="email-error"></span>
+                                <br><br>
+                                <label for="mobile">Mobile</label>
+                                <input type="text" id="mobile" name="mobile" placeholder="Your mobile number..">
+                                <span id="mobile-error"></span>
+                                <br><br>
+                                <label for="pcode">Post Code</label>
+                                <input type="text" id="pcode" name="pcode" placeholder="Your post code..">
+                                <span id="pcode-error"></span>
+                                <br><br>
+                                <label for="subject">Question(s)?</label>
+                                <textarea id="subject" name="subject" placeholder="eg: When does the course start?"></textarea>
+                                <span id="subject-error"></span>
+                                <br><br>
+                                <input type="reset"  onclick="clearErrors()">
+                                <input type="submit" value="Submit">
+                            </form>                    
+                        </div>
+                        <div class="contact-column">
+                            <h4>Address:</h4>
+                            <img src="images/map.png" alt="map of company location">
+                            <p>Gelos Enterprises Pty. Ltd.</p>
+                            <p>19 Tanner Street</p>
+                            <p>Carey Park NSW 2429</p><br>
+                            <h4>Telephone Number:</h4>
+                            <p>Telephone: (02) 4939 5050</p>
+                            <p>Email us at: <a href="mailto:GE@studywithus.com.au">GE@studywithus.com.au</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer">
+                <div class="newsletter">
+                    <h3>Subscribe to our newsletter.</h3>
+                    <input type="email" placeholder="ENTER YOUR EMAIL"><button>Subscribe</button>
+                </div>
+
+                <div class="footer-row">
+                    <div class="footer-column">
+                        <h2>Information</h2>
+                        <a href="index.html">About GE</a>
+                        <a href="course.html">Course Information</a>
+                        <a href="#">RTO Information</a>
+
+                    </div>
+                    <div class="footer-column">
+                        <h2>Contact us</h2>
+                        <a href="contact.html">Enquires</a>
+                        <a href="contact.html">Student Support</a>
+                        <a href="contact.html">Our Campus</a>
+
+                    </div>
+                    <div class="footer-column">
+                        <h2>Follow us</h2>
+                        <a href="https://www.instagram.com/" rel="noreferrer noopener" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com/" rel="noreferrer noopener" target="_blank">Facebook</a>
+                        <a href="https://www.youtube.com/" rel="noreferrer noopener" target="_blank">Youtube</a>
+                        <a href="https://www.twitter.com/" rel="noreferrer noopener" target="_blank">Twitter</a>
+
+                    </div>
+                </div>
+                <p>© 2023 Gelos Enterprises (GE)</p>
+            </div>
+
+        </div>
+    </div>
+<script src="validate.js"></script>
+</body>
+
+</html>
