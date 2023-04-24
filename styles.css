@@ -400,7 +400,7 @@ body {
 
 .contact-container input[type="submit"],
 .contact-container input[type="reset"] {
-    background-color: rgb(7, 122, 153);
+    background-color: #0AA6D1;
     color: black;
     padding: 12px 20px;
     border: none;
