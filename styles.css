@@ -24,6 +24,7 @@ body {
     padding: 20px;
     text-align: center;
     color: rgb(238, 213, 174);
+    background-color: #383838;
     font-style: oblique;
     background-image: url(images/headerjpg.jpg);
     
@@ -93,7 +94,7 @@ body {
 
 /* Active/current nav link */
 .navbar a.active {
-    background-color: rgb(160,132,99);
+    background-color: #65573E;
     color: white;
 }
 
@@ -316,7 +317,7 @@ body {
 .footer {
     padding: 10px;
     text-align: center;
-    background-color: #737070;
+    background-color: #979595;
     width: 100%;
     z-index: 998;
 }
