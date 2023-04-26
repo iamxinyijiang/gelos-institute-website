@@ -1,26 +1,26 @@
 function validateForm() {
     clearErrors()
     // Get the values of the form inputs
-    var fname = document.getElementById("fname").value;
-    var lname = document.getElementById("lname").value;
-    var email = document.getElementById("email").value;
-    var mobile = document.getElementById("mobile").value;
-    var pcode = document.getElementById("pcode").value;
-    var subject = document.getElementById("subject").value;
+    let fname = document.getElementById("fname").value;
+    let lname = document.getElementById("lname").value;
+    let email = document.getElementById("email").value;
+    let mobile = document.getElementById("mobile").value;
+    let pcode = document.getElementById("pcode").value;
+    let subject = document.getElementById("subject").value;
 
     // Define regular expressions for email, mobile and postcode
-    var emailRegex = /\S+@\S+\.\S+/;
-    var mobileRegex = /^(?:\+?61|0)[2-478](?:[ -]?[0-9]){8}$/;
-    var pcodeRegex = /^(0[289]|[1-9]\d?)\d{3}$/;
+    let emailRegex = /\S+@\S+\.\S+/;
+    let mobileRegex = /^(?:\+?61|0)[2-478](?:[ -]?[0-9]){8}$/;
+    let pcodeRegex = /^(0[289]|[1-9]\d?)\d{3}$/;
 
     // Define error messages and error flag for each input
-    var fnameError = "";
-    var lnameError = "";
-    var emailError = "";
-    var mobileError = "";
-    var pcodeError = "";
-    var subjectError = "";
-    var hasErrors = false;
+    let fnameError = "";
+    let lnameError = "";
+    let emailError = "";
+    let mobileError = "";
+    let pcodeError = "";
+    let subjectError = "";
+    let hasErrors = false;
 
     // Check if the first name is empty
     if (fname == "") {
@@ -65,7 +65,7 @@ function validateForm() {
         document.getElementById("pcode").style.border = '1px solid red'
         hasErrors = true;
     } else if (!pcodeRegex.test(pcode)) {
-        pcodeError = "<span>Please enter a valid 4-digit Australian postcode.</span>";
+        pcodeError = "<span>Please enter a valid Australian postcode.</span>";
         document.getElementById("pcode").style.border = '1px solid red'
         hasErrors = true;
     }
